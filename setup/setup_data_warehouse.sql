@@ -1,5 +1,5 @@
-DROP SCHEMA IF EXISTS algorand;
-CREATE SCHEMA algorand;
+DROP SCHEMA IF EXISTS warehouse;
+CREATE SCHEMA warehouse;
 DROP TABLE IF EXISTS algorand_price_data;
 
 CREATE TABLE algorand_price_data (
