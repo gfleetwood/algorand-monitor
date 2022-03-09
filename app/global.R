@@ -16,8 +16,4 @@ con = dbPool(
   sslmode = "require"
 )
 
-data = con %>% 
-  tbl("algorand_price_data") %>%
-  collect()
-
 

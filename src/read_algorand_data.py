@@ -35,4 +35,4 @@ if __name__ == '__main__':
 
   df = get_exchange_data()
   eng = create_engine(environ["SBASE_DB"])
-  #df.to_sql("algorand_data", con = eng, index = False, if_exists = "append")
+  df.to_sql("algorand_data", con = eng, index = False, if_exists = "append")
