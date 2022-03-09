@@ -2,7 +2,6 @@ import datetime
 import logging
 import sys
 from requests import Request, Session
-from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 from os import environ
 import pandas as pd

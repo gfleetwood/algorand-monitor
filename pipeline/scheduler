@@ -1,1 +1,1 @@
-*/1 * * * * /home/gordon/.local/bin/dagster job execute -f /home/gordon/workspace/dagster/orchestration.py
+*/1 * * * * /usr/bin/doppler run -- /home/pipeline/.venv/bin/dagster job execute -f /home/pipeline/orchestration.py

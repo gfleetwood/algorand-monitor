@@ -11,5 +11,5 @@ with Diagram("Algorand Monitor", show = True):
     Python("Read Data") >> \
     Storage("Datalake") >> \
     Python("write Data") >> \
-    SQL("Datawarehouse") >> \
+    Storage("Datawarehouse") >> \
     Blank("R Shiny App")
