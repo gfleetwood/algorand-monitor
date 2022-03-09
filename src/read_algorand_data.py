@@ -5,8 +5,8 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 from os import environ
-from sqlalchemy import create_engine
 import pandas as pd
+from sqlalchemy import create_engine
 
 def get_exchange_data():
 
@@ -35,4 +35,4 @@ if __name__ == '__main__':
 
   df = get_exchange_data()
   eng = create_engine(environ["SBASE_DB"])
-  df.to_sql("algorand_data", con = eng, index = False, if_exists = "append")
+  #df.to_sql("algorand_data", con = eng, index = False, if_exists = "append")

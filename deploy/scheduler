@@ -1,0 +1,1 @@
+*/1 * * * * /home/gordon/.local/bin/dagster job execute -f /home/gordon/workspace/dagster/orchestration.py

@@ -17,7 +17,7 @@ con = dbPool(
 )
 
 data = con %>% 
-  tbl("") %>%
+  tbl("algorand_price_data") %>%
   collect()
 
 
