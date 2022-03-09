@@ -1,15 +1,15 @@
-from diagrams import Diagram
-from diagrams.aws.compute import EC2
-from diagrams.generic.database import SQL
+from diagrams import Cluster, Diagram
+from diagrams.programming.language import Python
+from diagrams.programming.language import Bash
 from diagrams.generic.storage import Storage
-# diagrams.generic.os.Ubuntu
-# diagrams.generic.blank.Blank
-# diagrams.programming.flowchart.Database
-#diagrams.programming.language.Python
-#diagrams.programming.language.R
-#diagrams.programming.language.Bash
-#https://diagrams.mingrammer.com/docs/nodes/gcp
-
+from diagrams.generic.blank import Blank
+from diagrams.generic.database import SQL
 
 with Diagram("Algorand Monitor", show = True):
-    SQL("supabase") >> EC2("web")
+
+    Blank("Coin Martket Cap API") >> \
+    Python("Read Data") >> \
+    Storage("Datalake") >> \
+    Python("write Data") >> \
+    SQL("Datawarehouse") >> \
+    Blank("R Shiny App")
